@@ -1,0 +1,24 @@
+{
+  "name": "legal-ai-agent",
+  "version": "1.0.0",
+  "description": "AI-powered legal assistant for Costa Rican law",
+  "scripts": {
+    "install:all": "npm run install:frontend && npm run install:backend",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev"
+  },
+  "keywords": [
+    "legal",
+    "ai",
+    "costa-rica",
+    "law"
+  ],
+  "author": "Byron Cortes",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
